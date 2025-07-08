@@ -1,54 +1,57 @@
-# Repolish Crew
+# Repolish
 
-Welcome to the Repolish Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+# 🛠️ Repolish
 
-## Installation
+**Repolish** is an AI-powered tool that automatically generates, improves, and formats README files for GitHub repositories. Built on a CrewAI-based agentic architecture, Repolish understands your project, constructs a professional README, and can even submit it as a pull request — all through a clean, intuitive Gradio interface.
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+---
 
-First, if you haven't already, install uv:
+## 🚀 Features
 
-```bash
-pip install uv
-```
+- **Automated README Generation**  
+  Analyzes your repository to produce clear, concise, and well-structured documentation.
 
-Next, navigate to your project directory and install the dependencies:
+- **Agentic AI Architecture**  
+  Powered by [CrewAI](https://github.com/joaomdmoura/crewAI), Repolish leverages multiple intelligent agents, each handling a specific task like summarization, formatting, or structure design.
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
+- **Markdown Cleanup**  
+  Cleans up messy or redundant markdown to ensure a professional finish.
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+- **Pull Request Integration**  
+  Optionally creates a pull request to your repository with the improved README file.
 
-- Modify `src/repolish/config/agents.yaml` to define your agents
-- Modify `src/repolish/config/tasks.yaml` to define your tasks
-- Modify `src/repolish/crew.py` to add your own logic, tools and specific args
-- Modify `src/repolish/main.py` to add custom inputs for your agents and tasks
+- **Gradio UI**  
+  Simple web-based interface — no need to run anything from the command line (unless you want to).
 
-## Running the Project
+---
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+## 📦 Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-$ crewai run
+git clone https://github.com/your-username/repolish.git
+cd repolish
+pip install -r requirements.txt
 ```
 
-This command initializes the repolish Crew, assembling the agents and assigning them tasks as defined in your configuration.
+## 🧑‍💻 Usage
+Start the app using:
+```bash
+python -m repolish.main
+```
+This will launch a Gradio interface where you can:
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+  - Enter a GitHub repository URL.
+  - Click "Generate" to let Repolish analyze and build a professional README.
+  - Optionally, allow it to create a pull request to the source repository.
 
-## Understanding Your Crew
-
-The repolish Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the Repolish Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+## 🗂️ Project Structure
+repolish/
+├── config/
+│   ├── agents.yaml       # CrewAI agent definitions
+│   └── tasks.yaml        # Task definitions
+├── tools/                # Custom tools for agents
+├── crew.py               # CrewAI crew setup
+├── main.py               # App entry point (Gradio UI)
+└── ...
