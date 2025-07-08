@@ -1,0 +1,1 @@
+# Initialize readme_generator package

@@ -1,0 +1,35 @@
+analyze_repo_task:
+  description: >
+    Analyze the GitHub repository at {repo_url} to extract key information such as project purpose, structure, dependencies, and key files.
+    Ignore any existing README.md files in the repository.
+  expected_output: >
+    A detailed summary of the repository's purpose, structure, dependencies, and key files in JSON format.
+  agent: repo_analyzer
+
+generate_content_task:
+  description: >
+    Generate comprehensive and detailed README content based on the repository analysis for {repo_url}.
+    Include sections for project overview, installation, usage, and features.
+  expected_output: >
+    Raw text content for a README file, including sections for project overview, installation, usage, and features.
+  agent: content_generator
+  context:
+    - analyze_repo_task
+
+format_readme_task:
+  description: >
+    Format the generated README content into a well-structured Markdown file for the repository at {repo_url}.
+    Save the formatted README content as the final output.
+  expected_output: >
+    A well-structured README.md file in Markdown format.
+  agent: readme_formatter
+  context:
+    - generate_content_task
+
+create_pr_task:
+  description: >
+    Create a pull request to add the generated README file to the repository at {repo_url}.
+    The repository URL is {repo_url}, and the README file is located at {output_file}.
+  expected_output: >
+    A dictionary containing PR status information.
+  agent: pr_handler

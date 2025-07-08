@@ -1,0 +1,65 @@
+```json
+{
+  "name": "Q-A-Chatbot",
+  "description": "No description provided",
+  "language": "Python",
+  "stars": 0,
+  "forks": 0,
+  "files": [
+    {
+      "name": ".devcontainer",
+      "path": ".devcontainer",
+      "type": "dir"
+    },
+    {
+      "name": ".gitignore",
+      "path": ".gitignore",
+      "type": "file",
+      "size": 74
+    },
+    {
+      "name": "__pycache__",
+      "path": "__pycache__",
+      "type": "dir"
+    },
+    {
+      "name": "app.py",
+      "path": "app.py",
+      "type": "file",
+      "size": 1667
+    },
+    {
+      "name": "chroma_db",
+      "path": "chroma_db",
+      "type": "dir"
+    },
+    {
+      "name": "docs",
+      "path": "docs",
+      "type": "dir"
+    },
+    {
+      "name": "main.py",
+      "path": "main.py",
+      "type": "file",
+      "size": 953
+    },
+    {
+      "name": "query.py",
+      "path": "query.py",
+      "type": "file",
+      "size": 4845
+    },
+    {
+      "name": "requirements.txt",
+      "path": "requirements.txt",
+      "type": "file",
+      "size": 2952
+    }
+  ],
+  "dependencies": {
+    "requirements.txt": "aiosignal==1.3.2\r\naltair==5.5.0\r\nannotated-types==0.7.0\r\nanyio==4.8.0\r\nasgiref==3.8.1\r\nattrs==24.3.0\r\nbackoff==2.2.1\r\nbcrypt==4.2.1\r\nblinker==1.9.0\r\nbuild==1.2.2.post1\r\ncachetools==5.5.0\r\ncertifi==2024.12.14\r\ncharset-normalizer==3.4.1\r\nchroma-hnswlib==0.7.3\r\nchromadb==0.5.0\r\nclick==8.1.8\r\ncolorama==0.4.6\r\ncoloredlogs==15.0.1\r\ndataclasses-json==0.6.7\r\nDeprecated==1.2.15\r\ndistro==1.9.0\r\ndurationpy==0.9\r\nfastapi==0.115.6\r\nfilelock==3.16.1\r\nflatbuffers==24.12.23\r\nfrozenlist==1.5.0\r\nfsspec==2024.12.0\r\ngitdb==4.0.12\r\nGitPython==3.1.44\r\ngoogle-auth==2.37.0\r\ngoogleapis-common-protos==1.66.0\r\ngreenlet==3.1.1\r\ngrpcio==1.69.0\r\nh11==0.14.0\r\nhttpcore==1.0.7\r\nhttptools==0.6.4\r\nhttpx==0.28.1\r\nhuggingface-hub==0.27.1\r\nhumanfriendly==10.0\r\nidna==3.10\r\nimportlib-metadata==6.11.0\r\nimportlib_resources==6.5.2\r\nJinja2==3.1.5\r\njiter==0.8.2\r\njsonpatch==1.33\r\njsonpointer==3.0.0\r\njsonschema==4.23.0\r\njsonschema-specifications==2024.10.1\r\nkubernetes==31.0.0\r\nlangchain==0.2.17\r\nlangchain-chroma==0.2.0\r\nlangchain-community==0.2.5\r\nlangchain-core==0.2.43\r\nlangchain-openai==0.1.8\r\nlangchain-text-splitters==0.2.4\r\nlangsmith==0.1.147\r\nmarkdown-it-py==3.0.0\r\nMarkupSafe==3.0.2\r\nmarshmallow==3.25.1\r\nmdurl==0.1.2\r\nmmh3==5.0.1\r\nmonotonic==1.6\r\nmpmath==1.3.0\r\nmultidict==6.1.0\r\nmypy-extensions==1.0.0\r\nnarwhals==1.21.1\r\nnumpy==1.26.4\r\noauthlib==3.2.2\r\nonnxruntime==1.20.1\r\nopenai==1.59.6\r\nopentelemetry-api==1.27.0\r\nopentelemetry-exporter-otlp-proto-common==1.27.0\r\nopentelemetry-exporter-otlp-proto-grpc==1.27.0\r\nopentelemetry-instrumentation==0.48b0\r\nopentelemetry-instrumentation-asgi==0.48b0\r\nopentelemetry-instrumentation-fastapi==0.48b0\r\nopentelemetry-proto==1.27.0\r\nopentelemetry-sdk==1.27.0\r\nopentelemetry-semantic-conventions==0.48b0\r\nopentelemetry-util-http==0.48b0\r\norjson==3.10.14\r\noverrides==7.7.0\r\npackaging==23.2\r\npandas==2.2.3\r\nPillow==9.5.0\r\nposthog==3.7.5\r\npropcache==0.2.1\r\nprotobuf==4.25.5\r\npyarrow==18.1.0\r\npyasn1==0.6.1\r\npyasn1_modules==0.4.1\r\npydantic==2.10.5\r\npydantic_core==2.27.2\r\npydeck==0.9.1\r\nPygments==2.19.1\r\nPympler==1.1\r\nPyPika==0.48.9\r\npyproject_hooks==1.2.0\r\npyreadline3==3.5.4\r\npython-dateutil==2.9.0.post0\r\npython-dotenv==1.0.0\r\npytz==2024.2\r\npytz-deprecation-shim==0.1.0.post0\r\nPyYAML==6.0.2\r\nreferencing==0.35.1\r\nregex==2024.11.6\r\nrequests==2.32.3\r\nrequests-oauthlib==2.0.0\r\nrequests-toolbelt==1.0.0\r\nrich==13.9.4\r\nrpds-py==0.22.3\r\nrsa==4.9\r\nshellingham==1.5.4\r\nsix==1.17.0\r\nsmmap==5.0.2\r\nsniffio==1.3.1\r\nSQLAlchemy==2.0.37\r\nstarlette==0.41.3\r\nstreamlit==1.24.0\r\nstreamlit-chat==0.1.1\r\nsympy==1.13.3\r\ntenacity==8.5.0\r\ntiktoken==0.7.0\r\ntokenizers==0.21.0\r\ntoml==0.10.2\r\ntornado==6.4.2\r\ntqdm==4.67.1\r\ntyper==0.15.1\r\ntyping-inspect==0.9.0\r\ntyping_extensions==4.12.2\r\ntzdata==2024.2\r\ntzlocal==4.3.1\r\nurllib3==2.3.0\r\nuvicorn==0.34.0\r\nvalidators==0.34.0\r\nwatchdog==6.0.0\r\nwatchfiles==1.0.4\r\nwebsocket-client==1.8.0\r\nwebsockets==14.1\r\nwrapt==1.17.1\r\nyarl==1.18.3\r\nzipp==3.21.0\r\npysqlite3-binary"
+  },
+  "topics": []
+}
+```
